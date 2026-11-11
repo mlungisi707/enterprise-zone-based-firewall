@@ -171,7 +171,7 @@ Running a verification check on `IN-TO-OUT-ZP` demonstrates that outbound ICMP d
 ### Step 6: Inbound Application Layer Session Match Verification
 While the `WEB-TRAFFIC` policy permits both HTTP and HTTPS, inbound application constraints were validated using plain-text HTTP on Port 80. A socket listener was initialized on the `DMZ-Server` via Netcat (`nc -l -p 80`), and an HTTP payload transmitted from the untrusted `External-Attacker` host successfully negotiated the firewall perimeter. Running `show policy-map type inspect zone-pair OUT-TO-DMZ-ZP` verifies the active session tracking state and confirms application-layer hit increments.
 
-> 🎥 **Live Lab Demonstration:** [Watch the real-time Netcat handshake and policy counter verification on YouTube](YOUR_YOUTUBE_LINK_HERE)
+> 🎥 **Live Lab Demonstration:** [Watch the real-time Netcat handshake and policy counter verification on YouTube](https://youtu.be/oMhpA5N_VCE)
 
 
 ---
