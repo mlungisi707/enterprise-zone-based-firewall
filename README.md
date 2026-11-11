@@ -142,7 +142,7 @@ end
 
 ## 4. Engineering Verification & Evidence Portfolio
 ### Visual Topology & Physical Link Architecture
-![Network Topology Diagram](./images/1-zone-based-firewall-topology.png)
+![Network Topology Diagram](./images/01-zone-based-firewall-topology.png)
 
 * **Topology Breakdown:** This Cisco Modeling Labs (CML) canvas illustrates the active Router-on-a-Stick infrastructure. The central routing engine (`ZBF-Edge-FW`) connects via a single 802.1Q trunk link (`GigabitEthernet0/1`) to the managed layer-2 switch (`Core-Switch`). From there, traffic is isolated across three distinct VLAN access ports (`Gi1/0`, `Gi1/1`, and `Gi1/2`) leading directly to the isolated Alpine Linux endpoint nodes representing the **Inside**, **DMZ**, and **Outside** security zones.
 
