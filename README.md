@@ -141,6 +141,7 @@ end
 ---
 
 ## 4. Engineering Verification & Evidence Portfolio
+![CML Network Topology](./images/01-zone-based-firewall-topology.png)
 
 ### Step 1: 802.1Q Trunk Link Verification
 Running `show interface trunk` confirms the managed switch is actively multiplexing, tag-encapsulating, and passing logical traffic boundaries up the single physical wire to the routing core.
