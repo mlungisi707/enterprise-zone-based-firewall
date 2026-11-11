@@ -161,7 +161,7 @@ The command `show zone security` captures the precise moment the sub-interfaces 
 ### Step 4: Baseline Traffic Disruption Verification
 Initiating connectivity checks from `Inside-Network` to its local default gateway succeeds flawlessly (0% packet loss), while cross-zone communication to the unmapped DMZ server is successfully filtered and dropped (100% packet loss).
 
-![Baseline Network Drop Testing](./images/05-baseline-network-drop-testing.png)
+![Baseline Network Drop Testing](./images/05-basleline-network-drop-testing.png)
 
 ### Step 5: Stateful Outbound Traffic Inspection Verification
 Running a verification check on `IN-TO-OUT-ZP` demonstrates that outbound ICMP diagnostics are allowed, with packet inspection statistics dynamically tracking session milestones.
