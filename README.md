@@ -200,5 +200,3 @@ While the `WEB-TRAFFIC` policy permits both HTTP and HTTPS, inbound application 
 
 ### Q3. If a hacker successfully compromises the Web Server in your DMZ zone, what stops them from attacking your internal corporate office?
 **Response:** That is the exact reason I implemented a zero-trust **DMZ security zone**. By default, a Zone-Based Firewall drops all traffic traveling between different zones unless an explicit policy allows it. Our policy map only allows traffic to flow *from* the Outside *to* the DMZ on HTTP Port 80. There is no policy that allows traffic to initiate *from* the DMZ into the Inside zone. Because the firewall blocks all unsolicited inbound traffic across that zone boundary, the hacker remains entirely trapped inside the isolated DMZ segment, protecting our corporate infrastructure.
-
-### Q4. Walk me through the structural steps required to configure a Zone-Based Firewall rule in Cisco IOS.
